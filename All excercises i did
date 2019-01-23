@@ -1,0 +1,571 @@
+Exercise: 1
+data = '''
+Come to the
+River
+Of my
+Soulful
+Sentiments
+Meandering silently
+Yearning for release.
+Hasten
+Earnestly
+As my love flows by
+Rushing through the flood-gates
+To your heart.
+'''
+'''Trả về tiêu đề bài thơ ghép từ các chữ cái đầu tiên của mỗi dòng.
+    Chỉ viết hoa chữ cái đầu tiên.
+    '''
+    
+Exercise: 2
+In màn hình các số nguyên từ 1 đến 100, nhưng với bội của 3, in ra chữ “Fizz”
+thay vì số đo. Với bội của 5, in ra chữ “Buzz” thay vì số đó. Với các số là bội
+của cả 3 và 5 thì in ra chữ “FizzBuzz” thay vì số đó. Các số còn lại thì in ra
+bình thưòng.
+
+Exercise: 3
+'''
+Viết chương trình loại bỏ phần mở rộng của một tên file bất kỳ.
+
+Ví dụ::
+'''
+  input_data = '....slsslslsls...sls'
+  output = '....slsslslsls..'
+
+  input_data = 'maria.data.mp9'
+  output = 'maria.data'
+'''
+
+Exercise: 4
+'''
+Input: một số nguyên trong range(1,13,1). # start=1, stop=13, step=1
+Output: tên tương ứng của tháng đó bằng tiếng Anh, và số ngày trong tháng đó.
+Tháng 2 tính 28 ngày.
+
+Ví dụ:
+
+- input_data: 2
+
+- output: February 28
+'''
+'''Trả về 1 `list` chứa 2 phần tử, ví dụ:
+
+        input_data: 2
+        output: ("February", 28)'''
+ 
+Exercise: 5
+'''
+Xét các số nguyên dương < 100, in ra các số chia hết cho 5 theo dạng::
+
+    5 == 1 * 5
+    10 == 2 * 5
+    15 == 3 * 5
+    ...
+'''
+
+'''Trả về 1 `list` các `string` có dạng:
+
+        output: ['5 == 1 * 5', '10 == 2 * 5', ...]
+
+    Lưu ý: Thứ tự tăng dần theo bảng cửu chương
+    '''
+  
+Exercis: 6
+     '''Kiểm tra input_data có phải là palindrome không.
+
+    Một string được gọi là `palindrome` nếu viết xuôi hay ngược đều thu được
+    kết quả như nhau (không phân biệt hoa thường, bỏ qua dấu space).
+    String phải dài hơn 1 chữ cái.
+    Ví dụ các palindrome: 'civic', 'Able was I ere I saw Elba', 'Noon'
+
+    :rtype: bool
+    '''
+
+Exercise: 7
+'''IP là địa chỉ của một máy tính trong mạng (như địa chỉ nhà).
+    IPv4 được biểu diễn bằng 4 số từ 0-255, phân cách nhau bởi dấu `.`
+    Mỗi số trong khoảng 0-255 được biểu diễn bằng 8 bits (1 byte),
+    có tài liệu gọi 4 phần trong IPv4 này là 4 octet.
+    VD: IP của Google DNS là 8.8.8.8, IP mọi máy tính dùng để chỉ chính nó
+    có địa chỉ 127.0.0.1 hay thường gọi là localhost.
+
+    Trả về string biểu diễn binary (hệ cơ số 2) của `ip`.
+
+    Input::
+
+      192.168.1.1
+
+    Output::
+
+      11000000.10101000.00000001.00000001
+
+    Python có funtion đổi số integer thành biểu diễn ở hệ nhị phân (binary):
+
+      In [1]: bin(168)
+      Out[1]: '0b10101000'
+
+    Khi s = '1', s.zfill(5) sẽ thêm đủ "zero" để tạo thành '00001'
+    '''
+
+Exercise: 8
+'''Trả về giá trị cần cộng thêm với octal để thu được 0o777
+
+    Với người dùng Unix(Ubuntu, MacOS,...), mode của một file được biểu diễn ở
+    dạng Octal, VD: 644, 400, 777...
+
+    Gợi ý:
+
+    In [1]: oct(73)
+    Out[1]: '0o111'
+    '''
+    
+Exercise: 9
+ '''Trả về list chứa điểm tương ứng của các từ trong `words`
+
+    Nếu a b c d (không phân biệt chữ hoa thường) .... lần lượt bằng 1 2 3 4 ...
+    thì từ ``attitude`` có giá trị bằng 100.
+    (http://www.familug.org/2015/05/golang-tinh-tu-cung-9gag.html)
+
+    Gợi ý::
+
+      import string
+      print(string.ascii_lowercase)
+    '''
+    
+Exercise: 10
+'''
+a, b, c là các số nguyên dương nhỏ hơn 10, biết a + b/c = 10
+
+In ra list chứa các bộ số thỏa mãn điều kiện trên (a, b, c có thể trùng nhau).
+
+Ví dụ:
+
+- output: [[9, 1, 1], ...]
+'''
+
+Exercise: 11
+    '''Tính số nghiệm của bài toán lớp 3
+
+    Với các biến a,b,c,d,e,f,g,h,i là các số nằm trong khoảng 1-9 (các biến có
+    thể có giá trị giống nhau), dạng biểu thức:
+
+      a + 13 * b / c + d + 12 * e - f - 11 + g * h / i - 10 = 66
+
+    Bài toán lớp 3 có số đáp án khổng lồ
+    (http://www.familug.org/2015/05/codegolf-giai-bai-toan-lop-3-co-so.html)
+    '''
+
+Exercise: 12
+'''Tính tổng và tích của dãy số `numbers`
+
+    Return một tuple (sum, product)
+    Không sử dụng hàm `sum`
+    '''
+    
+Exercise: 13
+'''Bóc tách từ `text` ra một list các số theo thứ tự chúng xuất hiện.
+
+    VD: 'Em ơi có bao nhiêu, 60năm cuộc đời, 20 năm đầu, sung sướng0bao lâu'
+    -> [60, 20, 0]
+
+    NOTE: không dùng `re` library
+    '''
+Exercise: 14
+'''Trả về tuple-2 chứa year và tên gọi can chi tương ứng. Các từ trong tên
+    đề phải viết hoa các chữ cái đầu.
+
+    Biết có 10 thiên can::
+
+      ['giáp', 'ất', 'bính', 'đinh', 'mậu', 'kỷ', 'canh', 'tân', 'nhâm', 'quý']
+
+    Và 12 địa chi::
+
+      ['tý', 'sửu', 'dần', 'mão', 'thìn', 'tị', 'ngọ', 'mui', 'thân', 'dậu',
+       'tuất', 'hợi']
+
+    Năm 2017 là năm "Đinh Dậu".
+    '''
+ 
+Exercise: 15
+   '''Trả về list N bộ integer (a, b, c) là độ dài 3 cạnh của tam giác vuông
+    cạnh huyền `c` có chu vi 24 cm (perimeter), biết độ dài các cạnh <= 10cm.
+
+    Yêu cầu dùng list comprehension.
+    '''
+Exercise: 16
+    '''Tìm phần tử lớn nhất của list số nguyên `numbers`
+    Không sử dụng function `max`, `sorted`
+    '''
+
+Exercise: 17
+data = {
+    'xanh lá': '#3cba54',
+    'vàng': '#f4c20d',
+    'đỏ': '#db3236',
+    'xanh da trời': '#4885ed',
+}
+
+
+def solve(colors):
+    '''Ghi ra file index.html code HTML để tạo ra logo của Google với màu sắc
+    chính xác.
+    Biết cách để tạo chữ G màu xanh da trời dùng code HTML sau::
+
+      <span style="color:#4885ed">G</span>
+
+    Return list chứa các tuple, mỗi tuple  chứa chữ cái trong 'Google' và màu
+    của nó.
+    Gợi ý: dùng `zip`
+
+        In [1]: list(zip(['xanh', 'do'], ['XXX', 'YYY']))
+        Out[1]: [('xanh', 'XXX'), ('do', 'YYY')]
+    '''
+
+Exercise: 18
+'''
+Tips: dùng stdlib copy.deepcopy
+
+In [14]: import copy
+
+In [15]: d = [{'name': 'Dung', 'languages': ['C', 'Python']}]
+
+In [16]: dnew = copy.deepcopy(d)
+
+In [18]: dnew[0]['languages'].append('Elixir')
+
+In [19]: dnew
+Out[19]: [{'languages': ['C', 'Python', 'Elixir'], 'name': 'Dung'}]
+
+In [20]: d
+Out[20]: [{'languages': ['C', 'Python'], 'name': 'Dung'}]
+'''
+
+
+data = [
+    {"name": "Hoang",
+     "phone": "0988888888",
+     "languages": ["Python", "C", "SQL", "HTML", "CSS", "JavaScript",
+                   "Golang"],
+     },
+    {"name": "Duy", "girl_friend": "Maria"},
+    {"name": "Dai", "girl_friend": "Angela"},
+    {"name": "Tu"},
+]
+
+
+def solve(last_year_data):
+    '''
+    Trả về list thông tin các học viên sau khi đã update sau 1 năm.
+    Không thay đổi thông tin năm cũ.
+
+    Biết các học viên đều học được các ngôn ngữ lập trình
+    trong "languages" của học viên "Hoang".
+    Sau đó "Hoang" học thêm được ngôn ngữ "Elixir", các học
+    viên khác không biết ngôn ngữ này.
+    "Tu" có bạn gái tên là "Do Anh".
+    "Duy" chia thay bạn gái, không còn bạn gái nữa.
+    '''
+ 
+ Exercise: 19
+ data = '''Dictionaries are sometimes found in other languages as “associative memories” or “associative arrays”. Unlike sequences, which are indexed by a range of numbers, dictionaries are indexed by keys, which can be any immutable type; strings and numbers can always be keys. Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable object either directly or indirectly, it cannot be used as a key. You can’t use lists as keys, since lists can be modified in place using index assignments, slice assignments.''' # NOQA
+
+
+# Chú ý: dấu “ không phải double quotes "
+
+    '''
+    Đặt result bằng list chứa 10 tuple ứng với 10 từ xuất hiện nhiều nhất,
+    mỗi tuple chứa từ và số lần xuất hiện tương ứng.
+    (Nếu có nhiều từ cùng xuất hiện với số lần như nhau thì trả về từ nào
+    cũng được).
+    '''
+Exercise: 20
+    '''Tạo ra 1 file chứa 30 triệu dòng, các dòng lẻ chứa 30 số 1,
+    các dòng chẵn chứa giá trị 2 * số dòng hiện tại.
+
+    Sau khi tạo xong file, return result là list chứa 10 dòng cuối theo thứ tự
+    dòng xuất hiện trước đứng trước.
+
+    Chú ý: 30 triệu dòng.
+    '''
+
+Exercise: 21
+data = ['Trang', 'Trung', 'Tien',
+        'Dai', 'Duong', 'Dung', 'Hung', 'Huy', 'Hoang']
+
+MAGIC_NUMBER = 20200000
+
+
+def solve(students, N=5):
+    '''Biết những bạn có tên bắt đầu bằng chữ `D` sẽ ngồi phòng thi số N,
+    các bạn có tên bắt đầu chữ `H` ngồi phòng thi số N+1, và các bạn còn lại,
+    nếu có tên kết thúc là `ng` sẽ ngồi cùng phòng các bạn tên `H`, còn lại
+    ngồi cùng phòng `D`.
+    Tất cả các học viên đều sinh năm 1990.
+    Mã học viên được tính bằng: hash(NAME) % MAGIC_NUMBER
+    (chú ý số này mỗi lần chạy sẽ khác nhau).
+    Ví dụ: mã học viên của 'Dung' là: hash('Dung') % MAGIC_NUMBER
+
+    Trả về result là list các tuple chứa
+    (mã sinh viên, tên học viên, năm sinh, phòng thi), sắp xếp
+    theo thứ tự tên học viên.
+    '''
+Exercise: 22
+term1 = {'math': 3, 'python': 5, 'data': 2}
+term2 = {'math': 7, 'python': 9, 'SQL': 8, 'HTML': 6}
+data = [term1, term2]
+
+
+def solve(term1, term2):
+    '''Trả về result là dict chứa bảng điểm của các môn học sau hai học kỳ.
+    Biết điểm số được chọn là điểm số ở lần học sau cùng.
+    '''
+
+Exercise: 23
+    '''
+    Trả về string biễu diễn tương ứng ở hệ thập phân (decimal),
+    hệ nhị phân (binary), bát phân (octal), thập lục phân (heximal)
+
+    Gợi ý: sử dụng bin(), oct(), hex(), string method `rjust`
+    Mỗi dòng 1 số, với độ rộng là 8, các giá trị thẳng nhau căn lề phải.
+    Output :
+
+       1       1     0o1     0x1
+       2      10     0o2     0x2
+       ...
+    '''
+ 
+ Exercise: 24
+ data = [
+    {'name': 'An Giang', 'population': 2153700, 'area': 3536.7, 'senator':
+        10},
+    {'name': 'Bà Rịa - Vũng Tàu', 'population': 1039200, 'area': 1989.5,
+        'senator': 6},
+    {'name': 'Bạc Liêu', 'population': 873400, 'area': 2468.7, 'senator':
+        6},
+    {'name': 'Bắc Kạn', 'population': 301000, 'area': 4859.4, 'senator':
+        6},
+    {'name': 'Bắc Giang', 'population': 1588500, 'area': 3848.9, 'senator':
+        8},
+    {'name': 'Bắc Ninh', 'population': 1079900, 'area': 822.7, 'senator':
+        6},
+    {'name': 'Bến Tre', 'population': 1258500, 'area': 2357.7, 'senator':
+        7},
+    {'name': 'Bình Dương', 'population': 1748000, 'area': 2694.4,
+        'senator': 8},
+    {'name': 'Bình Định', 'population': 1501800, 'area': 6050.6, 'senator':
+        8},
+    {'name': 'Bình Phước', 'population': 912700, 'area': 6871.5, 'senator':
+        6},
+    {'name': 'Bình Thuận', 'population': 1193500, 'area': 7812.8,
+        'senator': 7},
+    {'name': 'Cà Mau', 'population': 1217100, 'area': 5294.9, 'senator':
+        7},
+    {'name': 'Cao Bằng', 'population': 515200, 'area': 6707.9, 'senator':
+        6},
+    {'name': 'Cần Thơ', 'population': 1214100, 'area': 1409, 'senator': 7},
+    {'name': 'Đà Nẵng', 'population': 973800, 'area': 1285.4, 'senator':
+        6},
+    {'name': 'Đắk Lắk', 'population': 1796700, 'area': 13125.4, 'senator':
+        9},
+    {'name': 'Đắk Nông', 'population': 543200, 'area': 6515.6, 'senator':
+        6},
+    {'name': 'Đồng Nai', 'population': 2720800, 'area': 5907.2, 'senator':
+        11},
+    {'name': 'Đồng Tháp', 'population': 1676300, 'area': 3377, 'senator':
+        8},
+    {'name': 'Điện Biên', 'population': 519300, 'area': 9562.9, 'senator':
+        6},
+    {'name': 'Gia Lai', 'population': 1342700, 'area': 15536.9, 'senator':
+        7},
+    {'name': 'Hà Giang', 'population': 758000, 'area': 7914.9, 'senator':
+        6},
+    {'name': 'Hà Nam', 'population': 790000, 'area': 860.5, 'senator': 6},
+    {'name': 'Hà Nội', 'population': 6844100, 'area': 3323.6, 'senator':
+        30},
+    {'name': 'Hà Tĩnh', 'population': 1230500, 'area': 5997.8, 'senator':
+        7},
+    {'name': 'Hải Dương', 'population': 1735100, 'area': 1656, 'senator':
+        9},
+    {'name': 'Hải Phòng', 'population': 1904100, 'area': 1523.9, 'senator':
+        9},
+    {'name': 'Hòa Bình', 'population': 806100, 'area': 4608.7, 'senator':
+        6},
+    {'name': 'Hậu Giang', 'population': 769700, 'area': 1602.5, 'senator':
+        6},
+    {'name': 'Hưng Yên', 'population': 1145600, 'area': 926, 'senator': 7},
+    {'name': 'TP. Hồ Chí Minh', 'population': 7681700, 'area': 2095.6,
+        'senator': 30},
+    {'name': 'Khánh Hòa', 'population': 1183000, 'area': 5217.7, 'senator':
+        7},
+    {'name': 'Kiên Giang', 'population': 1726200, 'area': 6348.5,
+        'senator': 9},
+    {'name': 'Kon Tum', 'population': 462400, 'area': 9689.6, 'senator':
+        6},
+    {'name': 'Lai Châu', 'population': 397500, 'area': 9068.8, 'senator':
+        6},
+    {'name': 'Lào Cai', 'population': 646800, 'area': 6383.9, 'senator':
+        6},
+    {'name': 'Lạng Sơn', 'population': 744100, 'area': 8320.8, 'senator':
+        6},
+    {'name': 'Lâm Đồng', 'population': 1234600, 'area': 9773.5, 'senator':
+        7},
+    {'name': 'Long An', 'population': 1458200, 'area': 4492.4, 'senator':
+        8},
+    {'name': 'Nam Định', 'population': 1836900, 'area': 1652.6, 'senator':
+        9},
+    {'name': 'Nghệ An', 'population': 2952000, 'area': 16490.9, 'senator':
+        13},
+    {'name': 'Ninh Bình', 'population': 915900, 'area': 1376.7, 'senator':
+        6},
+    {'name': 'Ninh Thuận', 'population': 576700, 'area': 3358.3, 'senator':
+        6},
+    {'name': 'Phú Thọ', 'population': 1335900, 'area': 3533.4, 'senator':
+        7},
+    {'name': 'Phú Yên', 'population': 877200, 'area': 5060.6, 'senator':
+        6},
+    {'name': 'Quảng Bình', 'population': 857900, 'area': 8065.3, 'senator':
+        6},
+    {'name': 'Quảng Nam', 'population': 1450100, 'area': 10438.4,
+        'senator': 8},
+    {'name': 'Quảng Ngãi', 'population': 1227900, 'area': 5153, 'senator':
+        7},
+    {'name': 'Quảng Ninh', 'population': 1177200, 'area': 6102.3,
+     'senator': 7},
+    {'name': 'Quảng Trị', 'population': 608100, 'area': 4739.8, 'senator':
+     6},
+    {'name': 'Sóc Trăng', 'population': 1301900, 'area': 3311.6, 'senator':
+     7},
+    {'name': 'Sơn La', 'population': 1134300, 'area': 14174.4, 'senator':
+     7},
+    {'name': 'Tây Ninh', 'population': 1089900, 'area': 4039.7, 'senator':
+     6},
+    {'name': 'Thái Bình', 'population': 1868800, 'area': 1570, 'senator':
+     9},
+    {'name': 'Thái Nguyên', 'population': 1150200, 'area': 3534.7,
+     'senator': 7},
+    {'name': 'Thanh Hóa', 'population': 3426600, 'area': 11132.2,
+     'senator': 16},
+    {'name': 'Thừa Thiên - Huế', 'population': 1114500, 'area': 5033.2,
+     'senator': 7},
+    {'name': 'Tiền Giang', 'population': 1692500, 'area': 2508.3,
+     'senator': 8},
+    {'name': 'Trà Vinh', 'population': 1015300, 'area': 2341.2, 'senator':
+     6},
+    {'name': 'Tuyên Quang', 'population': 738900, 'area': 5867.3,
+     'senator': 5},
+    {'name': 'Vĩnh Long', 'population': 1033600, 'area': 1504.9, 'senator':
+     6},
+    {'name': 'Vĩnh Phúc', 'population': 1020600, 'area': 1236.5, 'senator':
+     6},
+    {'name': 'Yên Bái', 'population': 764400, 'area': 6886.3, 'senator': 7}
+]
+
+
+def solve(input_data):
+    '''Dùng list comprehensions để:
+
+    - Tạo 1 list chứa tên, dân số của các thành phố có tên bắt đầu bằng chữ H,
+    sắp xếp theo thứ tự tên A-Z.
+
+    - Tạo 1 list chứa tên, dân số của các thành phố có dân số trên 1 triệu,
+    sắp xếp theo thứ tự giảm dần.
+    '''
+
+Exercise: 25
+'''Creates a list which contains N random integers, each >=0, <=9
+
+    To generate 1 random integer, use::
+
+      import random
+      random.randrange(0, 10)
+
+    Must: use list comprehension
+    Tips: list comprehension always create new list
+
+Exercise: 26
+data = {'first_50': 1230, 'from_51_to_100': 1530, 'above_100': 1786}
+
+
+def calculate_cost(usage, prices):
+    '''Tính tiền điện (integer)
+    với giá tiền cho bởi đề bài, số điện tiêu thụ `usage`
+    '''
+
+Exercise: 27
+''' Chia input_data thành các tuple chứa N phần tử (chunk a list).
+    Nếu tuple cuối không đủ phần tử thì bỏ đi.
+    '''
+
+Exercise: 28
+'''Tìm ngày giá BTC lên cao nhất. Trả về Tuple chứa ngày ở định dạng
+    YYYY-mm-dd (VD: 2017-06-19) và giá VND của 1 BTC
+    '''
+Exercise: 29
+'''Viết function ``sumall`` tính tổng của tất cả các argument (int, float,
+    hoặc string) được gọi. Thay input_data bằng code phù hợp.
+    '''
+  
+Exercise: 30
+   '''Return tổng (kiểu float) của các phân số trong args
+
+    https://docs.python.org/3/library/fractions.html
+    Thư viện fractions cung cấp class Fraction để tạo ra kiểu phân số trên
+    Python.
+
+    Tham khảo:
+    http://www.familug.org/2017/03/python-fractions-tinh-toan-phan-so-tren.html
+    '''
+
+Exercise: 31
+'''
+Viết 1 một trò chơi đánh đối kháng giữa 2 nhân vật. Mỗi nhân vật có tên (str),
+máu (int), vũ khí.
+Vũ khí chọn random khi tạo nhân vật, có damage (int) bằng lượng máu trừ đi
+khi đánh trúng.
+
+Cho 2 nhân vật lần lượt đánh nhau, print kết quả mỗi lượt đánh, print người
+thắng.
+
+'''
+
+Exercise: 32
+Yêu cầu:
+- Lưu file ``https://raw.githubusercontent.com/hvnsweeting/states/master/salt/event/init.sls`` về máy với tên event.yaml
+
+- Dùng pip cài thư viện PyYAML, import yaml và dùng `yaml.safe_load` để biến nội
+dung trong file thành kiểu dữ liệu trên Python.
+
+- In ra số phần tử của kiểu dữ liệu vừa tạo. Dùng thư viện json để
+ `json.dump` nội dung, ghi ra một file tên là event.json trong thư mục hiện tại.
+
+- Dùng thư viện pickle để pickle.dump nội dung trên ra file event.pkl trong
+  thư mục hiện tại. Chú ý khi mở file, phải mở ở chế độ ghi ở dạng binary. Đọc
+  thêm tại đây:
+  https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files`
+
+- In ra kích thước của mỗi file đã tạo.
+
+Gợi ý: sử dụng os.stat(filename).st_size
+'''
+
+Exercise: 33
+'''Thực hiện biến đổi
+
+      input: [a, abbbccccdddd, xxyyyxyyx]
+      output: [a, abb3cc4dd4, xx2yy3xyy2x]
+
+    Giải thích: Những chữ cái không lặp lại thì output giữ nguyên chữ cái đó.
+    Những chữ cái liên tiếp sẽ in ra 2 lần + số lần lặp lại liên tiếp.
+
+    Đây là một biến thể của một thuật toán nén dữ liệu có tên Run-length
+    encoding (RLE).
+    NOTE: không dùng itertools.groupby
+    '''
+
+Exercise: 34
+'''
+Yêu cầu:
+- Viết decorator in ra thời gian chạy của 1 function
+'''
+
+Exercise: 35
